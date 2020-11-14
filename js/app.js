@@ -39,7 +39,7 @@ async function fetchRepoData() {
         (item) => `
         <div class='repo'>
           <div class="split">
-            <a class="repo-name">${item.name}</a>
+            <a href=${item.html_url} class="repo-name">${item.name}</a>
             <button class="btn-small-primary"><i class="far fa-star"></i>  Star</button>
           </div>
           ${
@@ -75,12 +75,3 @@ async function fetchRepoData() {
 
 fetchData();
 fetchRepoData();
-
-const info = {
-  name: "dele",
-  lastName: "Talabi",
-  age: 24,
-};
-
-console.log(info.name);
-console.log(info.age);
